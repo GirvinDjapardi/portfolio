@@ -8,13 +8,24 @@ body
 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
+    background-color: #222831;
+    color: #EEEEEE;
 }
 
 
 .content {
-    margin-right: 150px;
+    margin-left: 1em;
     padding: 1px 16px;
     height: auto;
+}
+
+.content a {
+    color: #76abae;
+}
+
+.content section, img {
+    padding: 2em 0em;
+    line-height: 2em;
 }
 
 /* Sidebar */
@@ -23,32 +34,48 @@ body
     width: 150px;
     position: fixed;
     z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #111;
+    top: 10em;
+    right: 3em;
     overflow-x: hidden;
-    padding-top: 20px;
+    overflow-y: hidden;
+    text-align: right;
 }
 /* Sidebar links */
 .sidebar a {
-    padding: 10px 15px;
+    margin: 10px 0px 12px 30px;
     text-decoration: none;
     font-size: 16px;
-    color: white;
-    display: block;
+    color: #EEEEEE;
+    display: inline-block;
+    background:
+        linear-gradient(
+            to right,
+            #EEEEEE,
+            #EEEEEE
+            ),
+            linear-gradient(
+            to right,
+            rgba(118, 171, 174, 1),
+            rgba(118, 171, 174, 1)
+        );
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;          
 }
+
 .sidebar a:hover {
-    background-color: #555;
+    background-size: 0 2px, 100% 2px;
 }
 
 /* Profile Image */
 .imgProfile {
-    width: 4em;
+    width: 30em;
     height: auto;
 }
 
 
-/* Image Gallery Styles */
+/* Image Gallery Styles
 .image-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -63,18 +90,18 @@ body
 }
 .image-gallery img:hover {
     transform: scale(1.05);
-}
+}*/
+
 /* Contact icons */
 .container a {
     text-decoration: none;
-    color: #333;
     display: inline-flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 8px;
 }
 .container a i {
-    color: #0077B5;
+    color: #76abae;
     font-size: 24px;
 }
 
