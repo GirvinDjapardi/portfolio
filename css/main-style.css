@@ -42,6 +42,13 @@ body
     background-color: #555;
 }
 
+/* Profile Image */
+.imgProfile {
+    width: 16em;
+    height: auto;
+}
+
+
 /* Image Gallery Styles */
 .image-gallery {
     display: grid;
