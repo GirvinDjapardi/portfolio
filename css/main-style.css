@@ -6,9 +6,79 @@
 
 body
 {
-	background: #000000;
-	color: #999;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 }
+
+
+.content {
+    margin-right: 150px;
+    padding: 1px 16px;
+    height: auto;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+/* Sidebar links */
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+}
+.sidebar a:hover {
+    background-color: #555;
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 15px;
+    padding: 20px;
+}
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+/* Contact icons */
+.container a {
+    text-decoration: none;
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+.container a i {
+    color: #0077B5;
+    font-size: 24px;
+}
+
+/* Footer */
+.footer {
+    margin-right: 150px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
