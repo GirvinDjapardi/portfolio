@@ -62,7 +62,12 @@ p, li {
 img, video {
     width: 50vw;
     height: auto;
+}
 
+.imgSmall {
+    height: 90vh;
+    margin-right: 3em;
+    width: auto;
 }
 
 /* Section */
