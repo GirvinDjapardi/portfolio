@@ -22,55 +22,55 @@
 <link rel="stylesheet" href="css/master.css">
 <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
-<style>
-    /* Basic sidebar layout */
-    .bodyFlex {
-        display: grid;
-        grid-template-columns: 200px auto;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    /* Sticky sidebar */
-    .side {
-        position: sticky;
-        top: 20px;
-        height: fit-content;
-    }
-
-    /* Clean sidebar navigation */
-    .sidebar {
-        list-style: none;
-        padding: 0;
-    }
-
-    .sidebar a {
-        display: block;
-        padding: 10px;
-        color: black;
-        text-decoration: none;
-    }
-
-    /* Basic image sizes */
-    .imgProfile {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        margin: 20px 0;
-    }
-
-    .left img {
-        width: 70%;
-    }
-
-    /* Simple responsive design */
-    @media (max-width: 768px) {
+    <style>
+        /* Basic sidebar layout */
         .bodyFlex {
-            grid-template-columns: 1fr;
+            display: grid;
+            grid-template-columns: 200px auto;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
-    }
-</style>
+
+        /* Sticky sidebar */
+        .side {
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+        }
+
+        /* Clean sidebar navigation */
+        .sidebar {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Basic image sizes */
+        .imgProfile {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+
+        .left img {
+            width: 70%;
+        }
+
+        /* Simple responsive design */
+        @media (max-width: 768px) {
+            .bodyFlex {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 
 <body>
 
@@ -89,7 +89,7 @@
 
 <div class="content">
 <section id="about">
-<img class="imgProfile" src="images/profile.jpeg" alt="Profile Picture">
+<img class="imgProfile" src="images/profile.jpeg" alt="Profile Picture" style="width: 60%; height: 60%;">
 <h1>About Me</h1>
 <p>Hello! 😃 I’m Girvin, a Mechanical Engineer from the National University of Singapore! </p>
 </section>
@@ -97,7 +97,7 @@
 <section id="education">
 <h1>Education</h1>
 <div class="sectionFlex">
-<div class="left"><img src="images/NUS.jpeg" alt="NUS logo"></div>
+<div class="left"><img src="images/NUS.jpeg" alt="NUS logo" style="width: 60%;"></div>
 <div class="right"><p>National University Singapore</p></div>
 </div>
 <p>
@@ -111,7 +111,7 @@ Pursuing a specialization in Energy and Sustainability
 <hr class="dotted">
 
 <div class="sectionFlex">
-<div class="left"><img src="images/stanford.jpeg" alt="stanford logo"></div>
+<div class="left"><img src="images/stanford.jpeg" alt="stanford logo" style="width: 80%;"></div>
 <div class="right">
 <div> <p>Stanford University</p>
 <p style="font-size: 1em; margin-left: 5.5em; font-style: italic;">Management Science and Engineering</p>
@@ -135,7 +135,7 @@ Attached to Stanford under the Management Science and Engineering department fro
 <section id="work">
 <h1>Work Experience</h1>
 <div class="sectionFlex">
-					<div class="left"><img src="/images/padlet.svg" alt="Padlet logo"></div>
+					<div class="left"><img src="/images/padlet.svg" alt="Padlet logo" style="width: 50%;"></div>
 <div class="right"><p>Data and Operations Engineering</p></div>
 </div>
 <p>
@@ -152,7 +152,7 @@ At Padlet, our vision is to help anyone go from thought to pixel in the fastest,
 <hr class="dotted">
 
 <div class="sectionFlex">
-					<div class="left"><img src="/images/savills.png" alt="Savills logo"></div>
+					<div class="left"><img src="/images/savills.png" alt="Savills logo" style="width: 50%;"></div>
 <div class="right"><p>Energy and Sustainability Consultant</p></div>
 </div>
 <p>
@@ -169,7 +169,7 @@ The Energy and Sustainability Management department at Savills Singapore is lead
 <hr class="dotted">
 
 <div class="sectionFlex">
-<div class="left"><img src="images/ESI.jpeg" alt="ESI logo"></div>
+<div class="left"><img src="images/ESI.jpeg" alt="ESI logo" style="width: 60%;"></div>
 <div class="right"><p>Mechanical & Electrical Carbon Calculator Intern</p></div>
 </div>
 <p>
@@ -189,7 +189,7 @@ This not only catalyzes the energy transition as corporations can make well-info
 <br>
 <hr class="dotted">
 <div class="sectionFlex">
-<div class="left"><img src="images/hedgeDrip.jpeg" alt="hedgeDrip logo"></div>
+<div class="left"><img src="images/hedgeDrip.jpeg" alt="hedgeDrip logo" style="width: 40%;"></div>
 <div class="right"><p>Product Manager</p></div>
 </div>
 <p>
@@ -202,7 +202,7 @@ HedgeDrip is an early-stage B2B FinTech startup. It’s value proposition is Tra
 <li>My <strong>major highlights</strong> was identifying key pain points of our landing page’s interface when conducting user-journey interviews. As such, with Figma, I designed and spearhead A/B testing on my proposed changes, and this saw a 35% surge in conversion rate.</li>
 </ol>
 </p>
-<img src="images/hedgeDrip2.jpeg" alt="hedgeDrip2 product showcase">
+<img src="images/hedgeDrip2.jpeg" alt="hedgeDrip2 product showcase" style="width: 60%;">
 
 </section>
 <hr>
@@ -221,8 +221,8 @@ Our vision with EduGap is to un-antagonize the use of AI in our classrooms, and 
 <br><br>
 To learn more about our project, feel free to check out our <a href="https://devpost.com/software/edugap" target="_blank">Devpost</a>!
 </p>
-<img class="imgSmall" src="images/EduGap1.png" alt="EduGap Screenshot 1">
-<img class="imgSmall" src="images/EduGap2.png" alt="EduGap Screenshot 2">
+<img class="imgSmall" src="images/EduGap1.png" alt="EduGap Screenshot 1" style="width: 80%;">
+<img class="imgSmall" src="images/EduGap2.png" alt="EduGap Screenshot 2" style="width: 80%;">
 </div>
 <hr class="dotted">
 <br>
@@ -248,8 +248,8 @@ Leading business development, I crafted our business and revenue model, sourced 
 <br><br>
 We clinched the *most socially impactful solution* award*,* and was offered the green lane for a 10K Venture Initiation grant.
 </p>
-<img class="imgSmall" src="images/nNovate.jpeg" alt="nnovate1">
-<img class="imgSmall" src="images/weaveAb.jpeg" alt="nnovate2">
+<img class="imgSmall" src="images/nNovate.jpeg" alt="nnovate1" style="width: 80%;">
+<img class="imgSmall" src="images/weaveAb.jpeg" alt="nnovate2" style="width: 80%;">
 </div>
 <hr class="dotted">
 <br>
@@ -264,8 +264,8 @@ During this project, I led data cleaning and analysis of data sets from Pew Rese
 <br><br>
 During this project, I led data cleaning and analysis of data sets from Pew Research Centre, Kaggle etc. with Python. Lastly, we researched Information-to-Action implementations and evaluated Public Policy and Private firm routes, allowing stakeholders involve to individually decide which path best maximizes top-down and bottom-up change.
 </p>
-<img class="imgSmall" style="height: 50vh;" src="images/ml1.jpeg" alt="ml1">
-<img class="imgSmall" style="height: 50vh;" src="images/ml2.jpeg" alt="ml2">
+<img class="imgSmall" style="height: 50vh;" src="images/ml1.jpeg" alt="ml1" style="width: 80%;">
+<img class="imgSmall" style="height: 50vh;" src="images/ml2.jpeg" alt="ml2" style="width: 80%;">
 </div>
 <hr class="dotted">
 <br>
@@ -282,7 +282,7 @@ As the Mechanical Engineer of my team, I was in charge of building the robots bo
 </p>
 <br>
 <video width="320" height="240" controls>
-<source src="images/steering.mp4" type="video/mp4">
+<source src="images/steering.mp4" type="video/mp4" style="width: 40%;">
 Your browser does not support the video tag.
 </video>
 </div>
