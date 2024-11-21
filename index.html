@@ -20,63 +20,64 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="icon" type="image/x-icon" href="images/favicon.png">
-</head>
-    <style type="text/css">
-        /* Basic sidebar layout */
+
+<style type="text/css">
+    /* Basic sidebar layout */
+    .bodyFlex {
+        display: grid;
+        grid-template-columns: 200px auto;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Sticky sidebar */
+    .side {
+        position: sticky;
+        top: 20px;
+        height: fit-content;
+    }
+
+    /* Clean sidebar navigation */
+    .sidebar {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar a {
+        display: block;
+        padding: 10px;
+        color: #666666;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .sidebar a:hover {
+        color: #000000;
+        padding-left: 15px;
+        background-color: #f5f5f5;
+    }
+
+    /* Basic image sizes */
+    .imgProfile {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        margin: 20px 0;
+    }
+
+    .left img {
+        width: 70%;
+    }
+
+    /* Simple responsive design */
+    @media (max-width: 768px) {
         .bodyFlex {
-            display: grid;
-            grid-template-columns: 200px auto;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+            grid-template-columns: 1fr;
         }
-
-        /* Sticky sidebar */
-        .side {
-            position: sticky;
-            top: 20px;
-            height: fit-content;
-        }
-
-        /* Clean sidebar navigation */
-        .sidebar {
-            list-style: none;
-            padding: 0;
-        }
-
-        .sidebar a {
-            display: block;
-            padding: 10px;
-            color: #666666;
-            text-decoration: none;
-            transition: all 0.2s ease;
-        }
-
-        .sidebar a:hover {
-            color: #000000;
-            padding-left: 15px;
-            background-color: #f5f5f5;
-        }
-
-        /* Basic image sizes */
-        .imgProfile {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            margin: 20px 0;
-        }
-
-        .left img {
-            width: 70%;
-        }
-
-        /* Simple responsive design */
-        @media (max-width: 768px) {
-            .bodyFlex {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    }
+</style>
+</head>
 
 <body>
 
@@ -109,7 +110,7 @@
             <div class="right">
                 <p><strong>National University Singapore</strong><br>
                 <span style="font-style: italic;">Bachelor of Engineering (Hons): Mechanical Engineering | Minor in Finance and Data Analytics | Specialization in Energy and Sustainability</span><br>
-                Expected Date of Graduation → 2027<br>
+                Expected Date of Graduation → 2027</p>
             </div>
         </div>
 
@@ -117,7 +118,7 @@
 
         <div class="sectionFlex">
             <div class="left">
-                <img src="images/stanford.png" alt="stanford logo" style="width: 40%;">
+                <img src="images/stanford.png" alt="stanford logo" style="width: 20%;">
             </div>
             <div class="right">
                 <p><strong>Stanford University</strong><br>
@@ -157,8 +158,6 @@
         <li>Built real-time tracking dashboards on MetaBase with SQL, driving strategic insights that directly influence marketing efforts, revenue strategies, and customer journey success.</li>
         <li>Conducted comprehensive market research to propel effective outbound campaigns (Go-To-Market strategies) and ignite key partnerships with potential resellers and untapped markets across the world.</li>
     </ol>
-</p>
-<br>
 <hr class="dotted">
 
     <div class="sectionFlex">
@@ -178,8 +177,6 @@
         <li>Created intuitive dashboards for Building Management System data, where outliers are rectified to maintain the upkeep of engineering systems, and data extrapolation is streamlined, reducing <strong>the department's data analysis lifecycle by 18%</strong>.</li>
         <li>Engaged in client-facing opportunities to assess building health and conduct energy audits, consulting on Green Building certifications such as Green Mark, WELLS and LEED.</li>
     </ol>
-</p>
-<br>
 <hr class="dotted">
 
 <div class="sectionFlex">
@@ -191,7 +188,7 @@
     </div>
 </div>
 <p>
-    The Energy Studies Institute is an independent research institution in Singapore with a focus on Energy Economics, Energy Security and Energy, and the Environment. 
+    The Energy Studies Institute is an independent research institution in Singapore with a focus on Energy Economics, Energy Security and Energy, and the Environment.
     <br><br>
     The Built Environment division is developing a carbon calculator (enterprise software) that enables its clients to calculate the magnitude of embodied and operation account from Mechanical and Electrical products in a building.
     <br><br>
@@ -267,66 +264,65 @@ As a Product Manager, I led <strong>product development, market research, busine
 <br>
 <div>
     <h2>N-Novate x SDG Open Hack SG 2023 → Most Socially Impactful</h2>
-</div>
-<p>
-With a problem statement of helping Persons with Disabilities work on equal footing with their peers and an aim to reduce inequalities by creating more opportunities for youth with disabilities, we proposed offering a platform where we can train creatively-inclined youths to sell their reworked thrifted clothes on our marketplace. 
-<br><br>
-<strong>Leading business development</strong>, I crafted our business and revenue model, sourced for potential institutions we can partner with, and strategized competitor analysis. 
-<br><br>
-We clinched the most socially impactful solution award, and was offered the green lane for a 10K Venture Initiation grant.
-</p>
-<img class="imgSmall" src="images/weaveAb.jpeg" alt="nnovate2" style="width: 30%;">
-<img class="imgSmall" src="images/nNovate.jpeg" alt="nnovate1" style="width: 40%">
-</div>
-<hr class="dotted">
-<br>
-<div>
-						<h2>Algorithmic Mitigation of Affective Polarization </h2>
-<p>
-<a href="https://drive.google.com/drive/folders/1y8DZLaUs2Vtd8th3EEDxWu5aJb-VCvqI?usp=sharing">Machine Learning | Policy Analysis (Link to Project)</a> 
-<br><br>
-My team and I were interested in how the adverse consequences of affective polarization in the US can be mitigated via social media algorithms. We sought to minimize users' exposure to emotionally-charged social media content with an optimization model utilizing real-time data and binary decision variables.
-<br><br>
-During this project, I led <strong>data cleaning and analysis of data sets from Pew Research Centre, Kaggle etc. with Python</strong>. Lastly, we researched Information-to-Action implementations and evaluated Public Policy and Private firm routes, allowing stakeholders involve to individually decide which path best maximizes top-down and bottom-up change.
-</p>
-<img class="imgSmall" src="images/ml1.jpeg" alt="ml1" style="width: 42%;">
-<img class="imgSmall" src="images/ml2.jpeg" alt="ml2" style="width: 40%;">
+    <p>
+        With a problem statement of helping Persons with Disabilities work on equal footing with their peers and an aim to reduce inequalities by creating more opportunities for youth with disabilities, we proposed offering a platform where we can train creatively-inclined youths to sell their reworked thrifted clothes on our marketplace. 
+        <br><br>
+        <strong>Leading business development</strong>, I crafted our business and revenue model, sourced for potential institutions we can partner with, and strategized competitor analysis. 
+        <br><br>
+        We clinched the most socially impactful solution award, and was offered the green lane for a 10K Venture Initiation grant.
+    </p>
+    <div style="display: flex; justify-content: space-between;">
+        <img class="imgSmall" src="images/weaveAb.jpeg" alt="nnovate2" style="width: 30%;">
+        <img class="imgSmall" src="images/nNovate.jpeg" alt="nnovate1" style="width: 40%;">
+    </div>
 </div>
 <hr class="dotted">
 <br>
 <div>
-						<h2>Autonomous Steering Robot</h2>
-<p>
-In this project, my team and I were given the task to engineer a robot that was capable of navigating across a black-against-white terrain trek filled with curves and turns. 
-<br><br>
-With LDRs and LEDs as the robot’s eyes, we were able to instruct the robot (with Arduino) to execute real-time path adjustment. In other words, when both LDR detects low light levels (as the color of our terrain is black), the robot will continue on a straight path. 
-<br><br>
-However, if, for example, the left LDR detects high light levels (as it approaches a curve that demands a right turn), the robot will then halt movement in its right wheels, allowing the robot to slowly turn right until both LDR detects high light levels, in which it will continue traversing forward. 
-<br><br>
-As the Mechanical Engineer of my team, I was in charge of building the robots body and assembling its chassis and wheels. A key highlight was when I successfully optimized the positioning of the its ‘eyes’ and wheels to increase the turning success rate of our robot.
-</p>
+    <h2>Algorithmic Mitigation of Affective Polarization</h2>
+    <p>
+        <a href="https://drive.google.com/drive/folders/1y8DZLaUs2Vtd8th3EEDxWu5aJb-VCvqI?usp=sharing">Machine Learning | Policy Analysis (Link to Project)</a> 
+        <br><br>
+        My team and I were interested in how the adverse consequences of affective polarization in the US can be mitigated via social media algorithms...
+    </p>
+    <div style="display: flex; justify-content: space-between;">
+        <img class="imgSmall" src="images/ml1.jpeg" alt="ml1" style="width: 42%;">
+        <img class="imgSmall" src="images/ml2.jpeg" alt="ml2" style="width: 40%;">
+    </div>
+</div>
+<hr class="dotted">
 <br>
-<video width="320" height="240" controls>
-<source src="images/steering.mp4" type="video/mp4" style="width: 60%;">
-Your browser does not support the video tag.
-</video>
+<div>
+    <h2>Autonomous Steering Robot</h2>
+    <p>
+        In this project, my team and I were given the task to engineer a robot that was capable of navigating across a black-against-white terrain trek filled with curves and turns. 
+        <br><br>
+        With LDRs and LEDs as the robot's eyes, we were able to instruct the robot (with Arduino) to execute real-time path adjustment. In other words, when both LDR detects low light levels (as the color of our terrain is black), the robot will continue on a straight path. 
+        <br><br>
+        However, if, for example, the left LDR detects high light levels (as it approaches a curve that demands a right turn), the robot will then halt movement in its right wheels, allowing the robot to slowly turn right until both LDR detects high light levels, in which it will continue traversing forward. 
+        <br><br>
+        As the Mechanical Engineer of my team, I was in charge of building the robots body and assembling its chassis and wheels. A key highlight was when I successfully optimized the positioning of the its 'eyes' and wheels to increase the turning success rate of our robot.
+    </p>
+    <video width="320" height="240" controls style="width: 60%;">
+        <source src="images/steering.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </div>
 </section>
 <hr>
 <section id="contact" class="container">
-<h1>Contact Information</h1>
-<p style="margin-bottom: 0.5em;">Feel free to connect with me:</p>
-<div style="margin-left: 1em;">
-<a href="mailto:girvin_djapardi@u.nus.edu"><i class="fas fa-envelope"></i>girvin_djapardi@u.nus.edu</a><br>
-<a href="https://www.linkedin.com/in/girvin-djapardi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a><br>
-<a href="https://github.com/GirvinDjapardi/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-</div>
+    <h1>Contact Information</h1>
+    <p style="margin-bottom: 0.5em;">Feel free to connect with me:</p>
+    <div style="margin-left: 1em;">
+        <a href="mailto:girvin_djapardi@u.nus.edu"><i class="fas fa-envelope"></i> girvin_djapardi@u.nus.edu</a><br>
+        <a href="https://www.linkedin.com/in/girvin-djapardi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a><br>
+        <a href="https://github.com/GirvinDjapardi/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
 </section>
 <br>
 <br>
 <br>
 </main>
-</div>
 </div>
 
 <footer class="footer">
