@@ -1,258 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <title>Girvin's Portfolio</title>
-   <meta name="keywords" content="Girvin Djapardi, Portfolio, Mechanical Engineer, National University of Singapore">
-   <meta name="description" content="Girvin Djapardi's Resume and Portfolio">
-   <meta name="author" content="Girvin Djapardi">
-   <meta property="og:image" content="https://girvindjapardi.github.io/portfolio/images/shareImage.jpeg">
-   <meta property="og:image:type" content="image/jpeg">
-   <meta property="og:image:width" content="1024">
-   <meta property="og:image:height" content="538">
-   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-   <link rel="stylesheet" href="css/master.css">
-   <link rel="icon" type="image/x-icon" href="images/favicon.png">
-   <style>
-       .section-spacing { margin: 3em 0; }
-       .content-paragraph { margin: 1.5em 0; line-height: 1.6; }
-       .list-spacing { margin-left: 1.5em; line-height: 1.6; }
-       .section-heading { margin: 2em 0 1em 0; }
-       .subsection-heading { margin: 1.5em 0 1em 0; }
-       .image-container { clear: both; display: table; margin: 1.5em 0; }
-       .company-logo { max-width: 80%; height: auto; }
-   </style>
+<meta charset="UTF-8">
+
+<title>Girvin's Portfolio</title>
+<meta name="keywords" content="Girvin Djapardi, Portfolio, Mechanical Engineer, National University of Singapore">
+<meta name="description" content="Girvin Djapardi's Resume and Portfolio">
+<meta name="author" content="Girvin Djapardi">
+
+<meta property="og:image" content="https://girvindjapardi.github.io/portfolio/images/shareImage.jpeg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="538">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/master.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
+<style>
+    /* Basic sidebar layout */
+    .bodyFlex {
+        display: grid;
+        grid-template-columns: 200px auto;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Sticky sidebar */
+    .side {
+        position: sticky;
+        top: 20px;
+        height: fit-content;
+    }
+
+    /* Clean sidebar navigation */
+    .sidebar {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar a {
+        display: block;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+    }
+
+    /* Basic image sizes */
+    .imgProfile {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        margin: 20px 0;
+    }
+
+    .left img {
+        width: 70%;
+    }
+
+    /* Simple responsive design */
+    @media (max-width: 768px) {
+        .bodyFlex {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
 <body>
+
 <div class="bodyFlex">
-   <div class="side">
-       <ul class="sidebar">
-           <li><a href="#about">About Me</a></li>
-           <li><a href="#education">Education</a></li>
-           <li><a href="#work">Work</a></li>
-           <li><a href="#projects">Projects</a></li>
-           <li><a href="#contact">Contact</a></li>
-           <li><a target="_blank" href="Girvin_Djapardi-Resume.pdf">Resume_PDF</a></li>
-       </ul>
-   </div>
-   <div class="content">
-       <section id="about" class="section-spacing">
-           <img class="imgProfile" src="images/profile.jpeg" alt="Profile Picture">
-           <h1 class="section-heading">About Me</h1>
-           <p class="content-paragraph">Hello! 😃 I'm Girvin, a Mechanical Engineer from the National University of Singapore!</p>
-       </section>
-       <hr>
-       <section id="education" class="section-spacing">
-           <h1 class="section-heading">Education</h1>
-           <div class="sectionFlex">
-               <div class="left"><img src="images/NUS.jpeg" alt="NUS logo" class="company-logo"></div>
-               <div class="right"><p>National University Singapore</p></div>
-           </div>
-           <p class="content-paragraph">
-               Bachelor of Engineering (Hons): Mechanical Engineering | Minor in Quantitative Finance and Data Analytics<br>
-               (Expected Date of Graduation → 2026)<br>
-               Pursuing a specialization in Energy and Sustainability
-           </p>
-           <hr class="dotted">
-           <div class="sectionFlex">
-               <div class="left"><img src="images/stanford.jpeg" alt="Stanford logo" class="company-logo"></div>
-               <div class="right">
-                   <div>
-                       <p>Stanford University</p>
-                       <p style="font-size: 1em; margin-left: 5.5em; font-style: italic;">Management Science and Engineering</p>
-                   </div>
-               </div>
-           </div>
-           <p class="content-paragraph">
-               Attached to Stanford under the Management Science and Engineering department from Aug 2024 to July 2025. Was also at Stanford under the International Honors program over the summer of 2023, a progam extends to applicants across 17 countries under a highly rigorous and selective admission process.
-           </p>
-           <p class="content-paragraph">
-               <strong>Classes I took:</strong>
-               <ol class="list-spacing">
-                   <li>Technology Entrepreneurship (A) → The venture we worked on was selected as Investor's Top Pick by panelist of Principals and Partners from VCs across the Bay Area.</li>
-                   <li>Solving Social Problems with Data (A)</li>
-                   <li>Global Entrepreneurial Marketing → Attached to Windborne, an AI Weather Forecasting startup, for a GTM Strategy project.</li>
-               </ol>
-           </p>
-       </section>
-       <hr>
-       <section id="work" class="section-spacing">
-           <h1 class="section-heading">Work Experience</h1>
-           <div class="sectionFlex">
-               <div class="left"><img src="images/padlet.svg" alt="Padlet logo" style="width: 80%; height: auto;"></div>
-               <div class="right"><p>Data and Operations Engineering</p></div>
-           </div>
-           <p class="content-paragraph">
-               At Padlet, our vision is to help anyone go from thought to pixel in the fastest, easiest, and most beautiful way. It's a multi-media Ed-tech tool that allows users to collaborate through boards in real time. Over 40 million people use our product every month, and we strive for a future where 'Every child in the world will grow up with Mickey Mouse and Padlet.'
-           </p>
-           <p class="content-paragraph">
-               <strong>At Padlet, I:</strong>
-               <ol class="list-spacing">
-                   <li>Designed and built multiple internal tools ands automations with Airtable and Zapier for key functions across the customer journey lifecycle (lead conversion, onboarding & renewals), saving 2+ hours per day for 7+ team members.</li>
-                   <li>Built real-time tracking dashboards on MetaBase with SQL, driving strategic insights that directly influence marketing efforts, revenue strategies, and customer journey success.</li>
-                   <li>Conducted comprehensive market research to propel effective outbound campaigns (Go-To-Market strategies) and ignite key partnerships with potential resellers and untapped markets across the world.</li>
-               </ol>
-           </p>
-           <hr class="dotted">
-           <div class="sectionFlex">
-               <div class="left"><img src="images/savills.png" alt="Savills logo" style="width: 60%; height: auto;"></div>
-               <div class="right"><p>Energy and Sustainability Consultant</p></div>
-           </div>
-           <p class="content-paragraph">
-               The Energy and Sustainability Management department at Savills Singapore is leading the region's efforts of decarbonizing the built environment industry. We provide turnkey services, from project proposal and retrofit design, to its implementation. Our core services include Energy Audits, End-to-end Retrofit Design, Management, and Implementation (HVAC, Lighting, Plant), and Green Mark Consultancy.
-           </p>
-           <p class="content-paragraph">
-               <strong>As a consultant, I:</strong>
-               <ol class="list-spacing">
-                   <li>Led the decarbonization roadmap for 6 sites of diverse use-cases across Singapore, curating extensive sustainability reports where utility bill savings of up to 20% are identified, designed, and proposed via HVAC and lighting retrofit.</li>
-                   <li>Created intuitive dashboards for Building Management System data, where outliers are rectified to maintain the upkeep of engineering systems, and data extrapolation is streamlined, reducing the department's data analysis lifecycle by 18%.</li>
-                   <li>Engaged in client-facing opportunities to assess building health and conduct energy audits, consulting on Green Building certifications such as Green Mark, WELLS and LEED.</li>
-               </ol>
-           </p>
-           <hr class="dotted">
-           <div class="sectionFlex">
-               <div class="left"><img src="images/ESI.jpeg" alt="ESI logo" style="width: 70%; height: auto;"></div>
-               <div class="right"><p>Mechanical & Electrical Carbon Calculator Intern</p></div>
-           </div>
-           <p class="content-paragraph">
-               The Energy Studies Institute is an independent research institution in Singapore with a focus on Energy Economics, Energy Security and Energy, and the Environment. 
-               <br><br>
-               The Built Environment division is developing a calculator (enterprise software) that enables its clients to calculate the magnitude of embodied and operation account from Mechanical and Electrical products in a building.
-               <br><br>
-               This not only catalyzes the energy transition as corporations can make well-informed and sustainable decisions but allows buildings to retrofit its and M&E equipment inefficiencies accordingly.
-           </p>
-           <p class="content-paragraph">
-               <strong>At ESI, I:</strong>
-               <ol class="list-spacing">
-                   <li>Led data processing for switchgears, switchboards and transformers.</li>
-                   <li>Analyzed and extrapolated trends with Python and Excel, built visualization dashboards that enhanced the readability of data presented, and improved the accuracy of emission calculations.</li>
-                   <li>Initiated research on SF6 (Sulfur Hexafluoride) and how oil leakages in transformers caused by poor assembly and or maintenance may indirectly contribute to additional global warming potential, expanding the calculator's use-case</li>
-               </ol>
-           </p>
-           <hr class="dotted">
-           <div class="sectionFlex">
-               <div class="left"><img src="images/hedgeDrip.jpeg" alt="hedgeDrip logo"></div>
-               <div class="right"><p>Product Manager</p></div>
-           </div>
-           <p class="content-paragraph">
-               HedgeDrip is an early-stage B2B FinTech startup. It's value proposition is Trail Guide, a calculator that accurate discerns how much its user have to be earning to achieve their financial goals in the next 5, 10, and 15 years. 
-           </p>
-           <p class="content-paragraph">
-               <strong>As a Product Manager, I:</strong>
-               <ol class="list-spacing">
-                   <li>Collaborated with cross-functional teams in developing HedgeDrip's product vision, thereby allowing efficient execution of product strategy.</li>
-                   <li>Led market research to analyze consumer trends in Southeast Asia's FinTech space. Conducted user-journey interviews to verify findings and assess HedgeDrip's product-market fit.</li>
-                   <li>My <strong>major highlights</strong> was identifying key pain points of our landing page's interface when conducting user-journey interviews. As such, with Figma, I designed and spearhead A/B testing on my proposed changes, and this saw a 35% surge in conversion rate.</li>
-               </ol>
-           </p>
-       </section>
-       <hr>
-       <section id="projects" class="section-spacing">
-           <h1 class="section-heading">Projects & Competitions</h1>
-           <p class="content-paragraph">Beyond academic commitments, I have a strong passion for leveraging innovation and engineering to tackle social problems. Here are some projects I have worked on how did they turn out.</p>
-           <div class="project-section">
-               <h2 class="subsection-heading">CalHacks 11.0: The House Fund: "Cal" Track</h2>
-               <p class="content-paragraph">
-                   Driven by a personally felt pain point of poor faculty to student ratio that exists in many educational institutions, we built EduGap, an AI-driven Chrome Extension for Google Classroom. Our platform allows students to get access to custom chat bots, which outputs accurate and real-time answers based on resources (from various file types to assignments) uploaded by teachers.
-                   <br><br>
-                   On top of this, using machine learning algorithms and vector embedding for text, we created an algorithm that analyzes what topics students are most confused about and then provide teachers real-time feedback and recommendations. This allows teachers to identity recurring knowledge gaps that exists within their classes, increasing the quality of their teaching plans and student-teacher interactions.
-                   <br><br>
-                   Our vision with EduGap is to un-antagonize the use of AI in our classrooms, and instead bridge the gap that exists between faculty in students in oftentimes strained educational systems.
-                   <br><br>
-                   To learn more about our project, feel free to check out our <a href="https://devpost.com/software/edugap" target="_blank">Devpost</a>!
-               </p>
-               <div class="image-container">
-                   <img style="float:left; width: 40%" src="images/EduGap1.png" alt="EduGap Screenshot 1">
-                   <img style="float:left; width: 53%; margin-left: 2em;" src="images/EduGap2.png" alt="EduGap Screenshot 2">
-               </div>
-           </div>
-           <hr class="dotted">
-           <div class="project-section">
-               <h2 class="subsection-heading">NTU Port 63 Hackathon → 1st Place</h2>
-               <p class="content-paragraph">
-                   With a problem statement of helping Persons With Disabilities to navigate multi-tenanted places, we created a proximity-based matching solution that leverages mall workers as aids for visually-impaired individuals to navigate through malls.
-                   <br><br>
-                   As a Product Manager, I led product development, market research, business development and secured Letter of Intents for our pilot project from malls in Singapore and Indonesia.
-               </p>
-               <div class="image-container">
-                   <img style="float:left; width: 40%" src="images/comp1.jpeg" alt="Competition Image 1">
-                   <img style="float:left; width: 53%; margin-left: 2em;" src="images/comp2.jpeg" alt="Competition Image 2">
-               </div>
-           </div>
-           <hr class="dotted">
-           <div class="project-section">
-               <h2 class="subsection-heading">N-Novate x SDG Open Hack SG 2023 → Most Socially Impactful</h2>
-               <p class="content-paragraph">
-                   With a problem statement of helping Persons with Disabilities work on equal footing with their peers and an aim to reduce inequalities by creating more opportunities for youth with disabilities, we proposed offering a platform where we can train creatively-inclined youths to sell their reworked thrifted clothes on our marketplace. 
-                   <br><br>
-                   Leading business development, I crafted our business and revenue model, sourced for potential institutions we can partner with, and strategized competitor analysis. 
-                   <br><br>
-                   We clinched the *most socially impactful solution* award, and was offered the green lane for a 10K Venture Initiation grant.
-               </p>
-               <div class="image-container">
-                   <img style="float:left; width: 40%" src="images/nNovate.jpeg" alt="N-Novate Image">
-                   <img style="float:left; width: 53%; margin-left: 2em;" src="images/weaveAb.jpeg" alt="WeaveAb Image">
-               </div>
-           </div>
-           <hr class="dotted">
-           <div class="project-section">
-               <h2 class="subsection-heading">Algorithmic Mitigation of Affective Polarization</h2>
-               <p class="content-paragraph">
-                   <a href="https://drive.google.com/drive/folders/1y8DZLaUs2Vtd8th3EEDxWu5aJb-VCvqI?usp=sharing" target="_blank">Machine Learning | Policy Analysis (Link to Project)</a> 
-                   <br><br>
-                   My team and I were interested in how the adverse consequences of affective polarization in the US can be mitigated via social media algorithms. We sought to minimize users' exposure to emotionally-charged social media content with an optimization model utilizing real-time data and binary decision variables.
-                   <br><br>
-                   During this project, I led data cleaning and analysis of data sets from Pew Research Centre, Kaggle etc. with Python. Lastly, we researched Information-to-Action implementations and evaluated Public Policy and Private firm routes, allowing stakeholders involve to individually decide which path best maximizes top-down and bottom-up change.
-               </p>
-               <div class="image-container">
-                   <img style="float:left; width: 40%" src="images/ml1.jpeg" alt="Machine Learning Visual 1">
-                   <img style="float:left; width: 53%; margin-left: 2em;" src="images/ml2.jpeg" alt="Machine Learning Visual 2">
-               </div>
-           </div>
-           <hr class="dotted">
-           <div class="project-section">
-               <h2 class="subsection-heading">Autonomous Steering Robot</h2>
-               <p class="content-paragraph">
-                   In this project, my team and I were given the task to engineer a robot that was capable of navigating across a black-against-white terrain trek filled with curves and turns. 
-                   <br><br>
-                   With LDRs and LEDs as the robot's eyes, we were able to instruct the robot (with Arduino) to execute real-time path adjustment. In other words, when both LDR detects low light levels (as the color of our terrain is black), the robot will continue on a straight path. 
-                   <br><br>
-                   However, if, for example, the left LDR detects high light levels (as it approaches a curve that demands a right turn), the robot will then halt movement in its right wheels, allowing the robot to slowly turn right until both LDR detects high light levels, in which it will continue traversing forward. 
-                   <br><br>
-                   As the Mechanical Engineer of my team, I was in charge of building the robots body and assembling its chassis and wheels. A key highlight was when I successfully optimized the positioning of the its 'eyes' and wheels to increase the turning success rate of our robot.
-               </p>
-               <div class="content-paragraph">
-                   <video width="100%" max-width="720px" height="auto" controls style="margin: 1em 0;">
-                       <source src="images/steering.mp4" type="video/mp4">
-                       Your browser does not support the video tag.
-                   </video>
-               </div>
-           </div>
-       </section>
-       <hr>
-       <section id="contact" class="section-spacing">
-           <h1 class="section-heading">Contact Information</h1>
-           <p style="margin-bottom: 1.5em;">Feel free to connect with me:</p>
-           <div class="contact-links" style="margin-left: 1.5em; line-height: 2;">
-               <a href="mailto:girvin_djapardi@u.nus.edu" class="contact-item">
-                   <i class="fas fa-envelope" style="margin-right: 0.5em;"></i>girvin_djapardi@u.nus.edu
-               </a><br>
-               <a href="https://www.linkedin.com/in/girvin-djapardi" target="_blank" class="contact-item">
-                   <i class="fab fa-linkedin" style="margin-right: 0.5em;"></i>LinkedIn
-               </a><br>
-               <a href="https://github.com/GirvinDjapardi/" target="_blank" class="contact-item">
-                   <i class="fab fa-github" style="margin-right: 0.5em;"></i>GitHub
-               </a>
-           </div>
-       </section>
-       <div style="margin: 3em 0;"></div>
-   </div>
+<div class="side">
+<ul class="sidebar">
+<li><a href="#about">About Me</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#work">Work</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a target="_blank" href="Girvin_Djapardi-Resume.pdf">Resume_PDF</a></li>
+<!--a href="#gallery">Gallery</a-->
+</ul>
 </div>
+
+<div class="content">
+<section id="about">
+<img class="imgProfile" src="images/profile.jpeg" alt="Profile Picture">
+<h1>About Me</h1>
+<p>Hello! 😃 I’m Girvin, a Mechanical Engineer from the National University of Singapore! </p>
+</section>
+<hr>
+<section id="education">
+<h1>Education</h1>
+<div class="sectionFlex">
+<div class="left"><img src="images/NUS.jpeg" alt="NUS logo"></div>
+<div class="right"><p>National University Singapore</p></div>
+</div>
+<p>
+Bachelor of Engineering (Hons): Mechanical Engineering | Minor in Quantitative Finance and Data Analytics 
+<br>
+(Expected Date of Graduation → 2026)
+<br>
+Pursuing a specialization in Energy and Sustainability
+</p>
+<br>
+<hr class="dotted">
+
+<div class="sectionFlex">
+<div class="left"><img src="images/stanford.jpeg" alt="stanford logo"></div>
+<div class="right">
+<div> <p>Stanford University</p>
+<p style="font-size: 1em; margin-left: 5.5em; font-style: italic;">Management Science and Engineering</p>
+</div>
+</div>
+</div>
+<p>
+Attached to Stanford under the Management Science and Engineering department from Aug 2024 to July 2025. Was also at Stanford under the International Honors program over the summer of 2023, a progam extends to applicants across 17 countries under a highly rigorous and selective admission process.
+<br><br>
+<strong>Classes I took:</strong>
+<ol>
+<li>Technology Entrepreneurship (A) → The venture we worked on was selected as Investor’s Top Pick by panelist of Principals and Partners from VCs across the Bay Area.</li>
+<li>Solving Social Problems with Data (A)</li>
+<li>Global Entrepreneurial Marketing → Attached to Windborne, an AI Weather Forecasting startup, for a GTM Strategy project.</li>
+
+</ol>
+</p>
+
+</section>
+<hr>
+<section id="work">
+<h1>Work Experience</h1>
+<div class="sectionFlex">
+					<div class="left"><img src="/images/padlet.svg" alt="Padlet logo"></div>
+<div class="right"><p>Data and Operations Engineering</p></div>
+</div>
+<p>
+At Padlet, our vision is to help anyone go from thought to pixel in the fastest, easiest, and most beautiful way. It's a multi-media Ed-tech tool that allows users to collaborate through boards in real time. Over 40 million people use our product every month, and we strive for a future where 'Every child in the world will grow up with Mickey Mouse and Padlet.'
+<br><br>
+<strong>At Padlet, I:</strong>
+<ol>
+<li>Designed and built multiple internal tools ands automations with Airtable and Zapier for key functions across the customer journey lifecycle (lead conversion, onboarding & renewals), saving 2+ hours per day for 7+ team members.</li>
+<li>Built real-time tracking dashboards on MetaBase with SQL, driving strategic insights that directly influence marketing efforts, revenue strategies, and customer journey success.</li>
+<li>Conducted comprehensive market research to propel effective outbound campaigns (Go-To-Market strategies) and ignite key partnerships with potential resellers and untapped markets across the world.</li>
+</ol>
+</p>
+<br>
+<hr class="dotted">
+
+<div class="sectionFlex">
+					<div class="left"><img src="/images/savills.png" alt="Savills logo"></div>
+<div class="right"><p>Energy and Sustainability Consultant</p></div>
+</div>
+<p>
+The Energy and Sustainability Management department at Savills Singapore is leading the region's efforts of decarbonizing the built environment industry. We provide turnkey services, from project proposal and retrofit design, to its implementation. Our core services include Energy Audits, End-to-end Retrofit Design, Management, and Implementation (HVAC, Lighting, Plant), and Green Mark Consultancy.
+<br><br>
+<strong>As a consultant, I:</strong>
+<ol>
+<li>Led the decarbonization roadmap for 6 sites of diverse use-cases across Singapore, curating extensive sustainability reports where utility bill savings of up to 20% are identified, designed, and proposed via HVAC and lighting retrofit.</li>
+<li>Created intuitive dashboards for Building Management System data, where outliers are rectified to maintain the upkeep of engineering systems, and data extrapolation is streamlined, reducing the department's data analysis lifecycle by 18%.</li>
+<li>Engaged in client-facing opportunities to assess building health and conduct energy audits, consulting on Green Building certifications such as Green Mark, WELLS and LEED.</li>
+</ol>
+</p>
+<br>
+<hr class="dotted">
+
+<div class="sectionFlex">
+<div class="left"><img src="images/ESI.jpeg" alt="ESI logo"></div>
+<div class="right"><p>Mechanical & Electrical Carbon Calculator Intern</p></div>
+</div>
+<p>
+The Energy Studies Institute is an independent research institution in Singapore with a focus on Energy Economics, Energy Security and Energy, and the Environment. 
+<br><br>
+The Built Environment division is developing a calculator (enterprise software) that enables its clients to calculate the magnitude of embodied and operation account from Mechanical and Electrical products in a building.
+<br><br>
+This not only catalyzes the energy transition as corporations can make well-informed and sustainable decisions but allows buildings to retrofit its and M&E equipment inefficiencies accordingly.
+<br><br>
+<strong>At ESI, I:</strong>
+<ol>
+<li>Led data processing for switchgears, switchboards and transformers. </li>
+<li>Analyzed and extrapolated trends with Python and Excel, built visualization dashboards that enhanced the readability of data presented, and improved the accuracy of emission calculations.</li>
+<li>Initiated research on SF6 (Sulfur Hexafluoride) and how oil leakages in transformers caused by poor assembly and or maintenance may indirectly contribute to additional global warming potential, expanding the calculator’s use-case</li>
+</ol>
+</p>
+<br>
+<hr class="dotted">
+<div class="sectionFlex">
+<div class="left"><img src="images/hedgeDrip.jpeg" alt="hedgeDrip logo"></div>
+<div class="right"><p>Product Manager</p></div>
+</div>
+<p>
+HedgeDrip is an early-stage B2B FinTech startup. It’s value proposition is Trail Guide, a calculator that accurate discerns how much its user have to be earning to achieve their financial goals in the next 5, 10, and 15 years. 
+<br><br>
+<strong>As a Product Manager, I:</strong>
+<ol>
+<li>Collaborated with cross-functional teams in developing HedgeDrip’s product vision, thereby allowing efficient execution of product strategy.</li>
+<li>Led market research to analyze consumer trends in Southeast Asia’s FinTech space. Conducted user-journey interviews to verify findings and assess HedgeDrip’s product-market fit. </li>
+<li>My <strong>major highlights</strong> was identifying key pain points of our landing page’s interface when conducting user-journey interviews. As such, with Figma, I designed and spearhead A/B testing on my proposed changes, and this saw a 35% surge in conversion rate.</li>
+</ol>
+</p>
+<img src="images/hedgeDrip2.jpeg" alt="hedgeDrip2 product showcase">
+
+</section>
+<hr>
+<section id="projects">
+<h1>Projects & Competitions</h1>
+<p>Beyond academic commitments, I have a strong passion for leveraging innovation and engineering to tackle social problems.  Here are some projects I have worked on how did they turn out.</p>
+<br>
+<div>
+<h2>CalHacks 11.0: The House Fund: "Cal" Track</h2>
+<p>
+Driven by a personally felt pain point of poor faculty to student ratio that exists in many educational institutions, we built EduGap, an AI-driven Chrome Extension for Google Classroom. Our platform allows students to get access to custom chat bots, which outputs accurate and real-time answers based on resources (from various file types to assignments) uploaded by teachers.
+<br><br>
+On top of this, using machine learning algorithms and vector embedding for text, we created an algorithm that analyzes what topics students are most confused about and then provide teachers real-time feedback and recommendations. This allows teachers to identity recurring knowledge gaps that exists within their classes, increasing the quality of their teaching plans and student-teacher interactions.
+<br><br>
+Our vision with EduGap is to un-antagonize the use of AI in our classrooms, and instead bridge the gap that exists between faculty in students in oftentimes strained educational systems.
+<br><br>
+To learn more about our project, feel free to check out our <a href="https://devpost.com/software/edugap" target="_blank">Devpost</a>!
+</p>
+<img class="imgSmall" src="images/EduGap1.png" alt="EduGap Screenshot 1">
+<img class="imgSmall" src="images/EduGap2.png" alt="EduGap Screenshot 2">
+</div>
+<hr class="dotted">
+<br>
+<div>
+<h2>NTU Port 63 Hackathon → 1st Place</h2>
+<p>With a problem statement of helping Persons With Disabilities to navigate multi-tenanted places, we created a a proximity-based matching solution that leverages mall workers as aids for visually-impaired individuals to navigate through malls.
+<br><br>
+As a Product Manager, I led product development, market research, business development and secured Letter of Intents for our pilot project from malls in Singapore and Indonesia.
+</p>
+<div style="clear: both; display: table;">
+<img style="float:left; width: 40%" src="images/comp1.jpeg">
+<img style="float:left; width: 53%; margin-left: 2em;" src="images/comp2.jpeg">
+</div>
+</div>
+<hr class="dotted">
+<br>
+<div>
+						<h2>N-Novate x SDG Open Hack SG 2023 → Most Socially Impactful</h2>
+<p>
+With a problem statement of helping Persons with Disabilities work on equal footing with their peers and an aim to reduce inequalities by creating more opportunities for youth with disabilities, we proposed offering a platform where we can train creatively-inclined youths to sell their reworked thrifted clothes on our marketplace. 
+<br><br>
+Leading business development, I crafted our business and revenue model, sourced for potential institutions we can partner with, and strategized competitor analysis. 
+<br><br>
+We clinched the *most socially impactful solution* award*,* and was offered the green lane for a 10K Venture Initiation grant.
+</p>
+<img class="imgSmall" src="images/nNovate.jpeg" alt="nnovate1">
+<img class="imgSmall" src="images/weaveAb.jpeg" alt="nnovate2">
+</div>
+<hr class="dotted">
+<br>
+<div>
+						<h2>Algorithmic Mitigation of Affective Polarization </h2>
+<p>
+<a href="https://drive.google.com/drive/folders/1y8DZLaUs2Vtd8th3EEDxWu5aJb-VCvqI?usp=sharing">Machine Learning | Policy Analysis (Link to Project)</a> 
+<br><br>
+My team and I were interested in how the adverse consequences of affective polarization in the US can be mitigated via social media algorithms. We sought to minimize users’ exposure to emotionally-charged social media content with an optimization model utilizing real-time data and binary decision variables.
+<br><br>
+During this project, I led data cleaning and analysis of data sets from Pew Research Centre, Kaggle etc. with Python. Lastly, we researched Information-to-Action implementations and evaluated Public Policy and Private firm routes, allowing stakeholders involve to individually decide which path best maximizes top-down and bottom-up change.My team and I were interested in how the adverse consequences of affective polarization in the US can be mitigated via social media algorithms. We sought to minimize users’ exposure to emotionally-charged social media content with an optimization model utilizing real-time data and binary decision variables.
+<br><br>
+During this project, I led data cleaning and analysis of data sets from Pew Research Centre, Kaggle etc. with Python. Lastly, we researched Information-to-Action implementations and evaluated Public Policy and Private firm routes, allowing stakeholders involve to individually decide which path best maximizes top-down and bottom-up change.
+</p>
+<img class="imgSmall" style="height: 50vh;" src="images/ml1.jpeg" alt="ml1">
+<img class="imgSmall" style="height: 50vh;" src="images/ml2.jpeg" alt="ml2">
+</div>
+<hr class="dotted">
+<br>
+<div>
+						<h2>Autonomous Steering Robot</h2>
+<p>
+In this project, my team and I were given the task to engineer a robot that was capable of navigating across a black-against-white terrain trek filled with curves and turns. 
+<br><br>
+With LDRs and LEDs as the robot’s eyes, we were able to instruct the robot (with Arduino) to execute real-time path adjustment. In other words, when both LDR detects low light levels (as the color of our terrain is black), the robot will continue on a straight path. 
+<br><br>
+However, if, for example, the left LDR detects high light levels (as it approaches a curve that demands a right turn), the robot will then halt movement in its right wheels, allowing the robot to slowly turn right until both LDR detects high light levels, in which it will continue traversing forward. 
+<br><br>
+As the Mechanical Engineer of my team, I was in charge of building the robots body and assembling its chassis and wheels. A key highlight was when I successfully optimized the positioning of the its ‘eyes’ and wheels to increase the turning success rate of our robot.
+</p>
+<br>
+<video width="320" height="240" controls>
+<source src="images/steering.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+</section>
+<hr>
+<section id="contact" class="container">
+<h1>Contact Information</h1>
+<p style="margin-bottom: 0.5em;">Feel free to connect with me:</p>
+<div style="margin-left: 1em;">
+<a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i>girvin_djapardi@u.nus.edu</a><br>
+<a href="https://www.linkedin.com/in/girvin-djapardi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a><br>
+<a href="https://github.com/GirvinDjapardi/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+</div>
+</section>
+<br>
+<br>
+<br>
+</div>
+</div>
+
 <footer class="footer">
-   <p>Girvin K. Djapardi © 2024</p>
+<p>Girvin K. Djapardi © 2024</p>
 </footer>
+
 </body>
 </html>
