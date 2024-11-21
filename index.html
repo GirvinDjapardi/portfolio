@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
-    <style>
+    <style type="text/css">
         /* Basic sidebar layout */
         .bodyFlex {
             display: grid;
@@ -47,8 +47,15 @@
         .sidebar a {
             display: block;
             padding: 10px;
-            color: black;
+            color: #666666;
             text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .sidebar a:hover {
+            color: #000000;
+            padding-left: 15px;
+            background-color: #f5f5f5;
         }
 
         /* Basic image sizes */
@@ -86,7 +93,7 @@
 </ul>
 </div>
 
-<div class="content">
+<main class="content">
     <section id="about">
         <img class="imgProfile" src="images/profile.jpeg" alt="Profile Picture" style="width: 40%; height: 40%;">
         <h1>About Me</h1>
@@ -101,8 +108,8 @@
             </div>
             <div class="right">
                 <p><strong>National University Singapore</strong><br>
-                Bachelor of Engineering (Hons): Mechanical Engineering | Minor in Finance and Data Analytics | Specialization in Energy and Sustainability<br>
-                (Expected Date of Graduation → 2027)<br>
+                <span style="font-style: italic;">Bachelor of Engineering (Hons): Mechanical Engineering | Minor in Finance and Data Analytics | Specialization in Energy and Sustainability</span><br>
+                Expected Date of Graduation → 2027<br>
             </div>
         </div>
 
@@ -110,7 +117,7 @@
 
         <div class="sectionFlex">
             <div class="left">
-                <img src="images/stanford.webp" alt="stanford logo" style="width: 40%;">
+                <img src="images/stanford.png" alt="stanford logo" style="width: 40%;">
             </div>
             <div class="right">
                 <p><strong>Stanford University</strong><br>
@@ -123,7 +130,7 @@
             <strong>Classes I took:</strong>
         </p>
         <ol>
-            <li>Technology Entrepreneurship (A) → The venture we worked on was selected as Investor's Top Pick by panelist of Principals and Partners from VCs across the Bay Area.</li>
+            <li>Technology Entrepreneurship (A) → The venture we worked on (solving the Lemons problem in the Biotech equipment vertical) was selected as <strong>Investor's Top Pick</strong> by panelist of Principals and Partners from VCs across the Bay Area.</li>
             <li>Solving Social Problems with Data (A)</li>
             <li>Global Entrepreneurial Marketing → Attached to Windborne, an AI Weather Forecasting startup, for a GTM Strategy project.</li>
         </ol>
@@ -141,12 +148,12 @@
         </div>
     </div>
     <p>
-        At Padlet, our vision is to help anyone go from thought to pixel in the fastest, easiest, and most beautiful way. It's a multi-media Ed-tech tool that allows users to collaborate through boards in real time. Over 40 million people use our product every month, and we strive for a future where 'Every child in the world will grow up with Mickey Mouse and Padlet.'
+        At Padlet, our vision is to help anyone go from thought to pixel in the fastest, easiest, and most beautiful way. It's a multi-media Ed-tech tool that allows users to collaborate through boards in real time. Over 40 million people use our product every month, and we strive for a future where 'Every child in the world will grow up with Mickey Mouse and Padlet.
         <br><br>
         <strong>At Padlet, I:</strong>
     </p>
     <ol>
-        <li>Designed and built multiple internal tools ands automations with Airtable and Zapier for key functions across the customer journey lifecycle (lead conversion, onboarding & renewals), saving 2+ hours per day for 7+ team members.</li>
+        <li>Designed and built multiple internal tools ands automations with Airtable and Zapier for key functions across the customer journey lifecycle (lead conversion, onboarding & renewals), <strong>saving 2+ hours per day for 7+ team members</strong>.</li>
         <li>Built real-time tracking dashboards on MetaBase with SQL, driving strategic insights that directly influence marketing efforts, revenue strategies, and customer journey success.</li>
         <li>Conducted comprehensive market research to propel effective outbound campaigns (Go-To-Market strategies) and ignite key partnerships with potential resellers and untapped markets across the world.</li>
     </ol>
@@ -167,8 +174,8 @@
         <strong>As a consultant, I:</strong>
     </p>
     <ol>
-        <li>Led the decarbonization roadmap for 6 sites of diverse use-cases across Singapore, curating extensive sustainability reports where utility bill savings of up to 20% are identified, designed, and proposed via HVAC and lighting retrofit.</li>
-        <li>Created intuitive dashboards for Building Management System data, where outliers are rectified to maintain the upkeep of engineering systems, and data extrapolation is streamlined, reducing the department's data analysis lifecycle by 18%.</li>
+        <li>Led the decarbonization roadmap for 6 sites of diverse use-cases across Singapore, curating extensive sustainability reports where <strong>energy savings of up to 20%</strong> are identified, designed, and proposed via HVAC and lighting retrofit.</li>
+        <li>Created intuitive dashboards for Building Management System data, where outliers are rectified to maintain the upkeep of engineering systems, and data extrapolation is streamlined, reducing <strong>the department's data analysis lifecycle by 18%</strong>.</li>
         <li>Engaged in client-facing opportunities to assess building health and conduct energy audits, consulting on Green Building certifications such as Green Mark, WELLS and LEED.</li>
     </ol>
 </p>
@@ -186,9 +193,9 @@
 <p>
     The Energy Studies Institute is an independent research institution in Singapore with a focus on Energy Economics, Energy Security and Energy, and the Environment. 
     <br><br>
-    The Built Environment division is developing a calculator (enterprise software) that enables its clients to calculate the magnitude of embodied and operation account from Mechanical and Electrical products in a building.
+    The Built Environment division is developing a carbon calculator (enterprise software) that enables its clients to calculate the magnitude of embodied and operation account from Mechanical and Electrical products in a building.
     <br><br>
-    This not only catalyzes the energy transition as corporations can make well-informed and sustainable decisions but allows buildings to retrofit its and M&E equipment inefficiencies accordingly.
+    This not only catalyzes the energy transition as corporations can make well-informed and sustainable decisions but allows buildings to retrofit its and M&E equipment inefficiencies accordingly. Feel free to check its press release <a href="https://www.linkedin.com/feed/update/urn:li:activity:7252587909533323265/" target="_blank">here</a>!
     <br><br>
     <strong>At ESI, I:</strong>
 </p>
@@ -238,8 +245,10 @@ Our vision with EduGap is to un-antagonize the use of AI in our classrooms, and 
 <br><br>
 To learn more about our project, feel free to check out our <a href="https://devpost.com/software/edugap" target="_blank">Devpost</a>!
 </p>
-<img class="imgSmall" src="images/EduGap1.png" alt="EduGap Screenshot 1" style="width: 60%;">
-<img class="imgSmall" src="images/EduGap2.png" alt="EduGap Screenshot 2" style="width: 60%;">
+<div style="display: flex; justify-content: space-between;">
+    <img class="imgSmall" src="images/EduGap1.png" alt="EduGap Screenshot 1" style="width: 48%;">
+    <img class="imgSmall" src="images/EduGap2.png" alt="EduGap Screenshot 2" style="width: 48%;">
+</div>
 </div>
 <hr class="dotted">
 <br>
@@ -247,7 +256,7 @@ To learn more about our project, feel free to check out our <a href="https://dev
 <h2>NTU Port 63 Hackathon → 1st Place</h2>
 <p>With a problem statement of helping Persons With Disabilities to navigate multi-tenanted places, we created a a proximity-based matching solution that leverages mall workers as aids for visually-impaired individuals to navigate through malls.
 <br><br>
-As a Product Manager, I led product development, market research, business development and secured Letter of Intents for our pilot project from malls in Singapore and Indonesia.
+As a Product Manager, I led <strong>product development, market research, business development</strong> and secured Letter of Intents for our pilot project from malls in Singapore and Indonesia.
 </p>
 <div style="clear: both; display: table;">
 <img style="float:left; width: 40%" src="images/comp1.jpeg">
@@ -257,13 +266,14 @@ As a Product Manager, I led product development, market research, business devel
 <hr class="dotted">
 <br>
 <div>
-						<h2>N-Novate x SDG Open Hack SG 2023 → Most Socially Impactful</h2>
+    <h2>N-Novate x SDG Open Hack SG 2023 → Most Socially Impactful</h2>
+</div>
 <p>
 With a problem statement of helping Persons with Disabilities work on equal footing with their peers and an aim to reduce inequalities by creating more opportunities for youth with disabilities, we proposed offering a platform where we can train creatively-inclined youths to sell their reworked thrifted clothes on our marketplace. 
 <br><br>
-Leading business development, I crafted our business and revenue model, sourced for potential institutions we can partner with, and strategized competitor analysis. 
+<strong>Leading business development</strong>, I crafted our business and revenue model, sourced for potential institutions we can partner with, and strategized competitor analysis. 
 <br><br>
-We clinched the *most socially impactful solution* award*,* and was offered the green lane for a 10K Venture Initiation grant.
+We clinched the most socially impactful solution award, and was offered the green lane for a 10K Venture Initiation grant.
 </p>
 <img class="imgSmall" src="images/weaveAb.jpeg" alt="nnovate2" style="width: 30%;">
 <img class="imgSmall" src="images/nNovate.jpeg" alt="nnovate1" style="width: 40%">
@@ -275,9 +285,9 @@ We clinched the *most socially impactful solution* award*,* and was offered the 
 <p>
 <a href="https://drive.google.com/drive/folders/1y8DZLaUs2Vtd8th3EEDxWu5aJb-VCvqI?usp=sharing">Machine Learning | Policy Analysis (Link to Project)</a> 
 <br><br>
-My team and I were interested in how the adverse consequences of affective polarization in the US can be mitigated via social media algorithms. We sought to minimize users’ exposure to emotionally-charged social media content with an optimization model utilizing real-time data and binary decision variables.
+My team and I were interested in how the adverse consequences of affective polarization in the US can be mitigated via social media algorithms. We sought to minimize users' exposure to emotionally-charged social media content with an optimization model utilizing real-time data and binary decision variables.
 <br><br>
-During this project, I led data cleaning and analysis of data sets from Pew Research Centre, Kaggle etc. with Python. Lastly, we researched Information-to-Action implementations and evaluated Public Policy and Private firm routes, allowing stakeholders involve to individually decide which path best maximizes top-down and bottom-up change.My team and I were interested in how the adverse consequences of affective polarization in the US can be mitigated via social media algorithms. We sought to minimize users’ exposure to emotionally-charged social media content with an optimization model utilizing real-time data and binary decision variables.
+During this project, I led <strong>data cleaning and analysis of data sets from Pew Research Centre, Kaggle etc. with Python</strong>. Lastly, we researched Information-to-Action implementations and evaluated Public Policy and Private firm routes, allowing stakeholders involve to individually decide which path best maximizes top-down and bottom-up change.
 </p>
 <img class="imgSmall" src="images/ml1.jpeg" alt="ml1" style="width: 42%;">
 <img class="imgSmall" src="images/ml2.jpeg" alt="ml2" style="width: 40%;">
@@ -315,6 +325,7 @@ Your browser does not support the video tag.
 <br>
 <br>
 <br>
+</main>
 </div>
 </div>
 
