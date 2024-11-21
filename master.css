@@ -1,0 +1,220 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #333;
+    --background-color: #fff;
+    --accent-color: #e74c3c;
+    --gray-light: #f5f6fa;
+    --spacing-unit: 1rem;
+    --border-radius: 8px;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --transition-speed: 0.3s;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--gray-light);
+}
+
+.bodyFlex {
+    display: flex;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Typography */
+h1, h2, h3 {
+    color: var(--primary-color);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 1.5rem; }
+h2 { font-size: 2rem; margin-bottom: 1.25rem; }
+h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+
+/* Navigation */
+.side {
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.sidebar {
+    background: var(--background-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-speed) ease;
+}
+
+.sidebar a:hover {
+    background: var(--secondary-color);
+    color: white;
+    transform: translateX(5px);
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    max-width: 900px;
+}
+
+.section-spacing {
+    background: var(--background-color);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Profile Section */
+.imgProfile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+/* Education & Work Cards */
+.education-card, .work-card {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--gray-light);
+    border-radius: var(--border-radius);
+    transition: transform var(--transition-speed) ease;
+}
+
+.education-card:hover, .work-card:hover {
+    transform: translateY(-2px);
+}
+
+.institution-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.company-logo {
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Project Section */
+.project-card {
+    margin-bottom: 2rem;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    transition: transform var(--transition-speed) ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.02);
+}
+
+/* Contact Section */
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color var(--transition-speed) ease;
+}
+
+.contact-item:hover {
+    color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bodyFlex {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .side {
+        position: relative;
+        width: 100%;
+    }
+
+    .sidebar {
+        margin-bottom: 2rem;
+    }
+
+    .institution-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Utility Classes */
+.section-divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 2rem 0;
+}
+
+.content-paragraph {
+    max-width: 70ch;
+    margin-bottom: 1.5rem;
+}
